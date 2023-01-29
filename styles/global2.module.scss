@@ -1,0 +1,38 @@
+// partials and imports (importing files )
+@import "variables";
+
+// mixins
+@mixin bd-radius ($val){
+    border-radius: $val;
+}
+
+@mixin bd-radius2 ($val:50px){  //default value
+    border-radius: $val;
+}
+.Container{
+    background-color: $primary-color;
+    margin: 20px;
+    padding: 20px;
+    @include bd-radius(5px)
+}
+
+
+
+//Nesting
+
+.Container{
+    p{
+        color: $text-color;
+    }
+    ul{
+        li{
+            color:$text-color; 
+            &:hover{
+                color: $text-hover;
+            }   
+        }
+        
+    }
+}
+
+

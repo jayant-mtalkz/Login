@@ -1,0 +1,59 @@
+$primary-color:#6b46c1;
+
+.Login_Container{
+    height: 100vh;
+    div{
+        img {
+            object-fit: contain;
+        }
+    }   
+    main{
+        padding: 30px;
+    }
+}
+.Login_Header{
+    height: 10vh;
+        background-color: $primary-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+}
+.Login_Form{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 50px 70px;
+    border-radius: 15px;
+    
+    figure{
+        position: relative;
+            img{
+                opacity: 0.3;
+            }
+            figcaption{
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+                background-color: $primary-color;
+                color: white;
+                padding: 5px 10px;
+                border-radius: 25px;
+                cursor: pointer;
+            }         
+    }
+    button{
+        width: 100%;
+        padding: 10px;
+        background-color: $primary-color;
+        color: white;
+        border: none;
+        border-radius: 25px;
+    }
+}
+.SuccessFull{
+    color: $primary-color;
+}
+
+@media (max-width: 1018px) {
+
+}

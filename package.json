@@ -10,8 +10,14 @@
   },
   "dependencies": {
     "@next/font": "13.1.5",
+    "@reduxjs/toolkit": "^1.9.1",
+    "bootstrap": "^5.2.3",
     "next": "13.1.5",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-bootstrap": "^2.7.0",
+    "react-dom": "18.2.0",
+    "react-redux": "^8.0.5",
+    "sass": "^1.57.1",
+    "timer-node": "^5.0.7"
   }
 }
