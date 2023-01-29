@@ -9,7 +9,7 @@ function index() {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  const [Timer, setTimer] = useState(7);
+  const [Timer, setTimer] = useState(30);
 
   useEffect(() => {
     if(Timer >0){
@@ -27,7 +27,7 @@ function index() {
         <main className='d-flex justify-content-center align-items-center'>
 
           <form className={`${styles.Login_Form}`}>
-            <h3>Scan And Proceed</h3>
+            <h3>Scan to proceed</h3>
             <figure className='d-flex border justify-content-center align-items-center'>
               <Image src={"/qr.png"} width={230} height={200} alt="qr"></Image>
               <figcaption ata-toggle="modal" data-target="#exampleModalLong" type="button" onClick={handleShow}>Show Code</figcaption>
@@ -62,7 +62,7 @@ function index() {
                   <Image src="/success.gif" alt="sucess" width={150} height={150} style={{objectFit:"contain"}}></Image>
                 <h3 className='w-100 text-center'>
                   <strong className='text-center '>
-                    Login Successfull
+                    Successfully authenticated
                   </strong>
                 </h3>
             </div>
